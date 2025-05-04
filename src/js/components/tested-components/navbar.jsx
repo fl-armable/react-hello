@@ -1,23 +1,10 @@
 import React from "react";
-import ReactDOM from "react-dom";
 import PropTypes from "prop-types";
 
-// Add the styles here
-
-const changeButtonStyle = {
-	background: "transparent",
-	border: "1px solid black",
-	color: "#6c757d",
-};
-const changeContainerStyle = {
-	background: "#f8f9fa",
-	border: "1px solid #dee2e6",
-	borderRadius: "1rem",
-};
 
 const Navbar = (props) => {
 	return (
-		<nav className="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+		<nav className="navbar navbar-expand-md bg-dark navbar-dark sticky-top">
 			<div className="container-fluid">
 				<a className="navbar-brand" href={props.brandUrl}>
 					{props.brand}
@@ -66,18 +53,4 @@ Navbar.propTypes = {
 	linkUrl4: PropTypes.string,
 };
 
-ReactDOM.render(
-	<Navbar
-		brand="Navbar"
-		brandUrl="#"
-		item1="Home"
-		item2="About"
-		item3="Services"
-		item4="Contact"
-		linkUrl1="#1"
-		linkUrl2="#2"
-		linkUrl3="#3"
-		linkUrl4="#4"
-	/>,
-	document.querySelector("#myDiv")
-);
+export default Navbar;

@@ -1,8 +1,9 @@
 import React from "react";
-import ReactDOM from "react-dom";
 import PropTypes from "prop-types";
 
-// Add the styles here
+// In order to practice styles, I changed button and container styles
+// If you remove the styles, the landing page will look like the example
+
 const changeButtonStyle = {
 	background: "transparent",
 	border: "1px solid black",
@@ -11,12 +12,12 @@ const changeButtonStyle = {
 const changeContainerStyle = {
 	background: "#f8f9fa",
 	border: "1px solid #dee2e6",
-	borderRadius: "1rem",
+	borderRadius: "0.5rem",
 };
 
 const Jumbotron = (props) => {
 	return (
-		<div className="container-fluid py-5" style={changeContainerStyle}>
+		<div className="container-fluid my-2 py-4" style={changeContainerStyle}>
 			<h1 className="display-5 fw-bold">{props.title}</h1>
 			<p className="col-md-8 fs-4">{props.description}</p>
 			<button className="btn btn-primary btn-lg" style={changeButtonStyle} type="button">
@@ -32,11 +33,4 @@ Jumbotron.propTypes = {
 	label: PropTypes.string,
 };
 
-ReactDOM.render(
-	<Jumbotron
-		title="Custom Jumbotron"
-		description="Using a series of utilities, you can create this Jumbotron, just like the one in previous versions of Bootstrap. Check out the examples below for how you can remix and restyle it to your liking."
-		label="Example button"
-	/>,
-	document.querySelector("#myDiv")
-);
+export default Jumbotron;
