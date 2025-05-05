@@ -27,7 +27,7 @@ const Home = () => {
 					title="Custom Jumbotron"
 					description="Using a series of utilities, you can create this Jumbotron, just like the one in previous versions of Bootstrap. Check out the examples below for how you can remix and restyle it to your liking."
 					label="Example button"			/>
-				<div className="row mx-auto">
+				<div className="row gap-2 mx-auto">
 					<Card
 						title="Card title"
 						description="Some quick example text to build on the card title and make up the bulk of the card's content."

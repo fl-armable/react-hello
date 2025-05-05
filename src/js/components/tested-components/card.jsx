@@ -17,7 +17,7 @@ const changeContainerStyle = {
 
 const Card = (props) => {
 	return (
-		<div className="col-md py-2" style={changeContainerStyle}>
+		<div className="col-lg py-2" style={changeContainerStyle}>
 			<img src={props.imageUrl} className="card-img-top" alt="..." />
 			<div className="card-body">
 				<h5 className="card-title">{props.title}</h5>
